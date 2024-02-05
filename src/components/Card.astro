@@ -13,7 +13,18 @@ const { href, title, body, data } = Astro.props;
 ---
 
 <div
-  class='border border-gray-300 p-6 hover:pl-7 py-2 rounded-lg shadow-lg transition-colors duration-200 hover:bg-blue-100'
+  class='p-6
+  hover:pl-7
+  py-2
+  border
+  border-2
+  border-double
+  border-gray-200
+  hover:border-10
+  hover:border-blue-500
+  transition-all
+  box-border
+  duration-200'
 >
   <a class='link' href={href}>
     <h3>
@@ -28,5 +39,3 @@ const { href, title, body, data } = Astro.props;
     <p class='text-xs'>{data.tags}</p> -->
   </a>
 </div>
-
-<!-- <div class="border border-gray-300 p-6 rounded-lg shadow-lg transition-colors duration-200 hover:bg-blue-100"> -->

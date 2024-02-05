@@ -13,14 +13,13 @@ const { siteName } = siteConfig;
     <a href='/' class='text-lg font-bold no-underline text-current'
       >{siteName}</a
     >
-
     <div class='hidden md:flex space-x-4'>
       {
         NavMenu.map((link) => {
           return (
             <a
               href={link.href}
-              class='block no-underline text-current py-2 text-xl font-medium font-mono'
+              class='block no-underline text-current py-2 text-l font-medium font-mono'
             >
               {link.name}
             </a>
@@ -50,8 +49,6 @@ const { siteName } = siteConfig;
       );
     })
   }
-  <!-- <a href="/blog" class="block no-underline text-current py-2">Blog</a>
-  <a href="/about" class="block no-underline text-current py-2">About</a> -->
 </div>
 
 <script>

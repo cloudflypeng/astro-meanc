@@ -1,43 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { authorConfig, siteConfig } from '@src/config'
-const {author} = authorConfig
-const {siteName} = siteConfig
+import { authorConfig, siteConfig } from '@src/config';
+const { author } = authorConfig;
+const { siteName } = siteConfig;
 ---
 
-<Layout title="Welcome to Astro.">
-  <section class="w-full flex justify-center text-base font-mono mt-20">
-    <article class="who w-3/4 md:w-2/5 flex flex-col">
-      <h2 class="font-extralight">{author}</h2>
-      <p class="my-1">Hey, I am MEANC, love UX and Efficiency improvement</p>
-      <p class="leading-8">A front-end development in qihoo company who having experience in big data</p>
-
-      <h3 class="my-1 mt-5">Skill</h3>
-      <p class="leading-8">
-        ES, React, Vue, Redux, immer, immutable, lottie, antd, antv(S2, X6, G6), antd Chart,Echarts, unocss, less, vite, webpack, Git, Npm
+<Layout title='Welcome to Astro.'>
+  <section class='w-full flex justify-center text-base font-mono mt-20'>
+    <article class='who w-3/4 md:w-2/5 flex flex-col'>
+      <h2 class='font-extralight'>{author}</h2>
+      <p class='my-1'>Hey, I am MEANC, love UX and Efficiency improvement</p>
+      <p class='leading-8'>
+        A front-end development in qihoo company who having experience in big
+        data
       </p>
-      <div>
-        <h3 >Social media</h3>
-        <div class="flex text-2xl gap-4">
-          <a class="social-link" href="https://github.com/cloudflypeng" target="_blank" rel="noreferrer">
-            <!-- <FaGithub /> -->
-            <span class="text-lg mx-2 ">GitHub</span>
-          </a>
-          <a class="social-link" href="https://twitter.com/meanc_p" target="_blank" rel="noreferrer">
-            <!-- <FaSquareXTwitter /> -->
-            <span class="text-lg mx-2">Twitter</span>
-          </a>
-          <a class="social-link" href="/img/wechat.jpg" target="_blank">
-            <!-- <FaWeixin /> -->
-            <span class="text-lg mx-2">WeChat</span>
-          </a>
-        </div>
-      </div>
-      {/* <MenuBar>
-        <div><FaGithub /></div>
-        <FaSquareXTwitter />
-        <FaWeixin />
-      </MenuBar> */}
+
+      <h3 class='my-1 mt-5'>Skill</h3>
+      <p class='leading-8'>
+        ES, React, Vue, Redux, immer, immutable, lottie, antd, antv(S2, X6, G6),
+        antd Chart,Echarts, unocss, less, vite, webpack, Git, Npm
+      </p>
     </article>
   </section>
 </Layout>

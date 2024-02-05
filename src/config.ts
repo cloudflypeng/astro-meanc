@@ -3,12 +3,19 @@ const authorConfig = {
   avatar: '//avatar.jpg',
   description: 'A developer who loves to code and learn new things.',
   email: 'cloudflypeng@gmail.com',
-  github: '',
-  linkedin: '',
-  twitter: '',
-  facebook: '',
-  instagram: '',
-  youtube: '',
+  social: [
+    {
+      name: 'github',
+      icon: 'i-logos-github-icon',
+      href: 'https://github.com/cloudflypeng',
+    },
+    {
+      name: 'twitter',
+      icon: 'i-logos-twitter',
+      href: 'https://twitter.com/meanc_p',
+    },
+  ],
+  location: 'Shanghai, China',
 };
 
 const siteConfig = {
