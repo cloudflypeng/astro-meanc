@@ -1,5 +1,6 @@
 ---
 // import {  siteConfig,  } from '@src/config.ts'
+import ThemeIcon from './ThemeIcon.astro';
 import { NavMenu, siteConfig } from '../config';
 const { siteName } = siteConfig;
 ---
@@ -8,7 +9,7 @@ const { siteName } = siteConfig;
   class='bg-background/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50 lg:mb-0 lg:border-0'
 >
   <nav
-    class='mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex items-center justify-between gap-3 h-[70px] font-pr'
+    class='mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex items-center justify-between gap-3 h-[70px] font-pr text-base'
   >
     <a href='/' class='text-lg font-bold no-underline text-current'
       >{siteName}</a
@@ -26,6 +27,7 @@ const { siteName } = siteConfig;
           );
         })
       }
+      <ThemeIcon />
     </div>
 
     <div class='md:hidden'>
