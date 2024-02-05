@@ -22,14 +22,15 @@ import Nav from '../components/Nav.astro';
   <body class='bg-base'>
     <Nav />
     <slot />
-  </body><style>
-    body::-webkit-scrollbar {
-      width: 0 !important;
-    }
+    <style>
+      body::-webkit-scrollbar {
+        width: 0 !important;
+      }
 
-    body {
-      overflow: -moz-scrollbars-none;
-      -ms-overflow-style: none;
-    }
-  </style>
+      body {
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+      }
+    </style>
+  </body>
 </html>

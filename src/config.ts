@@ -44,6 +44,10 @@ const NavMenu = [
     name: 'Connect',
     href: '/connect',
   },
+  {
+    name: 'Links',
+    href: '/links',
+  },
 ];
 
 export { authorConfig, siteConfig, NavMenu };

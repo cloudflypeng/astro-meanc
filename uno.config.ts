@@ -7,6 +7,7 @@ import {
   presetIcons,
   presetUno,
 } from 'unocss';
+import presetWebFonts from '@unocss/preset-web-fonts';
 
 export default defineConfig({
   rules: [['custom-rule', { color: 'red' }]],
@@ -38,6 +39,13 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        // mono: ['Protest Riot'],
+        pr: ['Protest Riot'],
+      },
+    }),
     presetIcons({
       scale: 1.2,
       cdn: 'https://esm.sh/',
