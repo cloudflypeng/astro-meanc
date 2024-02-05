@@ -1,0 +1,31 @@
+---
+// 导入 Astro 的内置 fetchContent 功能
+import { getCollection, getEntry } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import Card from '@components/Card.astro';
+
+// 获取集合中的所有条目。
+// 需要集合的名称作为参数。
+// 示例：检索 `src/content/blog/**`
+const posts = await getCollection('posts');
+---
+
+<!-- HTML 代码部分 -->
+<Layout title='文章列表'>
+  <main>
+    <div class='flex flex-wrap justify-center -m-4'>
+      {
+        posts.map((post) => (
+          <div class='lg:w-1/2 md:w-1/2 p-4 '>
+            <Card
+              title={post.data.title}
+              body={post.data.description}
+              href={`/posts/${post.slug}`}
+              data={post.data}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </main>
+</Layout>
